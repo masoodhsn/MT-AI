@@ -1,1 +1,1 @@
-# MT-AI
+Forecasting gold financial market using AI 
