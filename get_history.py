@@ -6,9 +6,9 @@ import pandas as pd
 def get_history():
     mt5.initialize()
   
-    history = pd.DataFrame(mt5.copy_rates_from_pos('XAUUSD', mt5.TIMEFRAME_H1, 0,1000 ))
+    history = pd.DataFrame(mt5.copy_rates_from_pos('XAUUSD', mt5.TIMEFRAME_H1, 0,50 ))
 
-    history['time'] = pd.to_datetime(history['time'], unit='s')
+    #history['time'] = pd.to_datetime(history['time'], unit='s')
 
     history.set_index('time', inplace=True)
 
